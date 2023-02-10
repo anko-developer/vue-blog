@@ -36,7 +36,7 @@
   <h2>블로그입니다.</h2>
 </div>
 
-<router-view :item="data[0]"></router-view>
+<router-view :items="data"></router-view>
 
 <!-- <TheList v-for="item in data" :key="item.number" :item="item" /> -->
 </template>
@@ -47,6 +47,8 @@ import data from '@/api/index.js';
 
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+body {
+  text-align: center;
+}
 </style>
